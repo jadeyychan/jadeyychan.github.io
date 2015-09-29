@@ -1,0 +1,19 @@
+.bio {
+	background-color: #A3C2C2;
+	height: 20em;
+	width: 100%;
+}
+
+.bio-left {
+	display: inline-block;
+	width: 50%;
+	color: white;
+	float: left;
+}
+
+.bio-right {
+	width: 50%;
+	display: inline-block;
+	background-color: black;
+	float: right;
+}

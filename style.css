@@ -1,3 +1,81 @@
-p {
-	color: blue;
+/* put font copy here IMPORT only */
+ 
+.toolbar {
+	background-color: white
+	height: 3em;
+}
+
+.toolbar-words {
+	padding-right: 2em;
+	color: #f26c4f;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: helvetica;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.toolbar-image {
+	height: 2em;
+	width: 1em;
+}
+
+.sec2 {
+	background-color: #D3D3D3;
+	height: 20em;
+	width: 100%;
+	/*border-top: 10em;*/
+}
+
+.sec2-words {
+	text-align: center;
+	font-family: helvetica;
+	padding: 3em;
+	color: #f26c4f;
+
+}
+
+.bio {
+	height: 20em;
+	margin: 0;
+	width: 100%;
+	color: black;
+}
+
+.bio-left {
+	height: 15em;
+	padding-top: 4em;
+	display: inline-block;
+	border-right-style: solid;
+	border-right-width: 0.20em;
+	width: 25%;
+	text-align: center;
+	font-family: helvetica;
+	float: left;
+}
+
+.circle-image {
+	border-radius: 50%;
+	width: 8em;
+	height: 8em;
+	border: none;
+}
+
+.bio-left-words {
+	padding-top: 1em;
+}
+
+.bio-right {
+	padding-top: 3em;
+	padding-right: 6em;
+	display: inline-block;
+	width: 60%;
+	float: right;
+	font-family: helvetica;
+}
+
+
+.resume {
+	padding-left: 14em;
+	padding-top: 4em;
 }
