@@ -2,20 +2,33 @@
 
 .toolbar {
 	background-color: white;
-	height: 3em;
+	height: 30px;
 	text-align: right;
 	vertical-align: middle;
 }
 
-.toolbar-words {
-	text-decoration: none;
-	background-color: none;
-	display: inline;
-	padding-right: 2em;
-	color: #f26c4f;
+
+.toolbar-all-words {
 	font-size: 1em;
 	font-weight: bold;
 	font-family: helvetica;
+	color: #f26c4f;
+}
+
+
+.toolbar-words {
+	color: #f26c4f;
+	text-decoration: none;
+	background-color: none;
+	display: inline;
+}
+
+.toolbar-words:last-child {
+	padding-right: 10px;
+}
+
+.toolbar-words:hover {
+	color: #2c3e50;
 }
 
 .sec2 {
