@@ -2,6 +2,16 @@ html, body {
 	height: 100%;
 }
 
+/* Temporary Banner */
+.banner {
+	width: 100%;
+	background-color: lightyellow;
+	padding: 20px 0px 20px 0px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	position: fixed;
+}
+
 /* Carousel Styling */
 
 /* Carousel Indicators */
@@ -79,3 +89,7 @@ html, body {
 }
 
 /* Resume */
+.downloadResume {
+	text-align: center;
+	margin-top: 20%;
+}
