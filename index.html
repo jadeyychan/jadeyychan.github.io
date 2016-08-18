@@ -1,22 +1,90 @@
 <!DOCTYPE html>
-<link href = "style.css" rel="stylesheet"/>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Jade Chan </title>
 
-<html>
-<head> </head>
-<body>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<div class = "toolbar"> 
-		<!-- Insert photo? -->
-		<div class = "toolbar-all-words"> 
-			<a href = "index.html" class = "toolbar-words"> Home </a>
-			| <a href = "bio.html" class = "toolbar-words"> About Me </a>
-			| <a href = "resume.html" class = "toolbar-words"> Resume </a> 
-		</div>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- For the gif -->
+	<script type="text/javascript" src="./libgif.js"></script>
+
+	<!-- Font: Roboto -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+  	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false"> 
+  		<!-- Wrapper for slides -->
+	  	<div class="carousel-inner" role="listbox">
+	    	<div class="item active">
+	    		<div class="page">
+		      		<div class="landingContent">
+		      			<div class="landingGIF">
+		      				<img src="landing_page_animation_small.gif" alt="Landing page: Welcome!" loop=infinite/>
+		      			</div>
+		     		</div>
+		  		</div>
+		   	</div>
+
+		    <div class="item">
+		    	<div class="page">
+		    		<div class="aboutContent">
+		    			<div class="aboutImage">
+		    				<img src="jade.gif">
+		    			</div>
+		    			<div class="aboutBio">
+		    				Jade Chan is currently living in a small college apartment in Boston full of relics from Hong Kong, with an overflowing closet and bookshelf. She is a full-time student pursuing degrees in computer science & English, but graphic design has always been in her periphery. How she landed on this combination is beyond her, but she enjoys typography, making things, and drinking copious amounts of water.  
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+
+		    <div class="item">
+		    	<div class="page">
+					<a href="JadeChanResume.pdf" download="JadeChanResume.pdf">
+						<span class="glyphicon glyphicon-download"> </span>
+					Download a PDF copy
+					</a>
+		    	</div>
+		    </div>
+	  </div>
+
+  	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#myCarousel" data-slide-to="0" class="active">
+	    </li>
+	    <li data-target="#myCarousel" data-slide-to="1"></li>
+	    <li data-target="#myCarousel" data-slide-to="2"></li>
+	  </ol>
+
+<!-- 	  <ol class="carousel-text">
+	  	<div class="carousel-indicators-text"> Home </div>
+	  	<div class="carousel-indicators-text"> About </div>
+  		<div class="carousel-indicators-text"> Resume </div>
+	  </ol> -->
+
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
 	</div>
 
-	<div id = "background-image">
-		<img src="img1.jpg" alt="Image of Jade smiling"/>
-	</div>
-</body>
 
+  </body>
 </html>

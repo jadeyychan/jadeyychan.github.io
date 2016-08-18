@@ -1,100 +1,81 @@
-/* put font copy here IMPORT only */
-
-#background-image img {
-	width: 100%;
+html, body {
+	height: 100%;
 }
 
-.toolbar {
-	background-color: white;
-	height: 30px;
-	text-align: right;
-	vertical-align: middle;
+/* Carousel Styling */
+
+/* Carousel Indicators */
+.carousel-indicators {
+	position: fixed;
+	padding-bottom: 75px;
+/*	background-color: red;*/
 }
 
-.toolbar-all-words {
-	font-size: 1em;
-	font-weight: bold;
-	font-family: helvetica;
-	color: #f26c4f;
+.carousel-indicators li {
+    background-color: darkgray;
+    border: none;
+    margin: 0px 7px;
 }
 
-.toolbar-words {
-	color: #f26c4f;
-	text-decoration: none;
-	display: inline;
+.carousel-indicators .active {
+    background-color: #595959;
+    margin: 0px 7px;
 }
 
-.toolbar-words:last-child {
-	padding-right: 15px;
+.carousel-text {
+	position: fixed;
+	padding-bottom: calc(100% - 100px);
 }
 
-.toolbar-words:hover {
-	color: #2c3e50;
+/* Carousel Arrows */
+.carousel-control {
+	position: fixed;
 }
 
-.sec2 {
-	background-color: #D3D3D3;
-	height: 20em;
-	width: 100%;
+/* Getting rid of default gradient behind left/right arrows */
+.carousel-control.left, .carousel-control.right {
+	color: gray;
+    background-image: none;
+    text-shadow: none;
+    font-size: 20px;
 }
 
-.sec2-words {
-	text-align: center;
-	font-family: helvetica;
-	padding: 3em;
-	color: #f26c4f;
-
+/* Hides the first left arrow */
+.left {
+	display: none;
 }
 
-.bio {
-	height: 20em;
-	margin: 0;
-	width: 100%;
-	color: black;
-	background-color: #ecf0f1;
-}
-
-.bio-left {
-	color: #f26c4f;
-	height: 16em;
-	padding-top: 4em;
-	display: inline-block;
-	border-right-style: solid;
-	border-right-width: 0.20em;
-	width: 25%;
-	text-align: center;
-	font-family: helvetica;
-	float: left;
-}
-
-.circle-image {
-	border-radius: 50%;
-	width: 8em;
-	height: 8em;
-}
-
-.bio-left-words {
-	padding-top: 1.5em;
-	color: #f26c4f;
-}
-
-.bio-right {
-	padding-top: 3em;
-	padding-right: 6em;
-	display: inline-block;
+/* Page Container */
+.page {
 	width: 60%;
-	float: right;
-	font-family: helvetica;
+	margin: 0px auto;
+	height: calc(100% - 100px);
 }
 
-h1 {
-	color: #f26c4f;
+/* Landing Page */
+/*.landingContent {
+	margin: 0px auto;
+	margin-top: 10%;
+	width: 90%;
+	text-align: center;
+}*/
+
+/* About */
+.aboutImage {
+	padding-top: 10%;
+	text-align: center;
 }
 
-.resume {
-	font-family: helvetica;
-	padding-left: 14em;
-	padding-top: 4em;
-	background-color: #ecf0f1;
-	padding-bottom: 4em;
+.aboutImage img {
+	width: 45%;
 }
+
+.aboutBio {
+	width: 70%;
+	padding-top: 50px;
+	margin: 0px auto;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Resume */
