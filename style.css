@@ -6,10 +6,21 @@ html, body {
 .banner {
 	width: 100%;
 	background-color: lightyellow;
-	padding: 20px 0px 20px 0px;
+	padding: 15px 0px 15px 0px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	position: fixed;
+	z-index: 100;
+	color: gray;
+}
+
+.banner:hover {
+	color: black;
+}
+
+.banner-close {
+	margin: 0px 5px 0px 5px;
+	font-size: 10px;
 }
 
 /* Carousel Styling */
@@ -17,24 +28,34 @@ html, body {
 /* Carousel Indicators */
 .carousel-indicators {
 	position: fixed;
-	padding-bottom: 75px;
-/*	background-color: red;*/
+	bottom: 8%;
 }
 
 .carousel-indicators li {
     background-color: darkgray;
     border: none;
-    margin: 0px 7px;
+    margin: 0px 20px;
 }
 
 .carousel-indicators .active {
     background-color: #595959;
-    margin: 0px 7px;
+    margin: 0px 20px;
 }
 
-.carousel-text {
-	position: fixed;
-	padding-bottom: calc(100% - 100px);
+.carousel-text-container {
+    position: fixed;
+    bottom: 4%;
+    width: 100%;
+    margin-left: 40.5%;
+}
+
+.carousel-text-container li {
+	list-style-type: none;
+	margin: 0px 7.5px 0px 7.5px;
+	display: inline;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #595959;
 }
 
 /* Carousel Arrows */
@@ -63,16 +84,16 @@ html, body {
 }
 
 /* Landing Page */
-/*.landingContent {
+.landingContent {
 	margin: 0px auto;
-	margin-top: 10%;
+	margin-top: 3%;
 	width: 90%;
 	text-align: center;
-}*/
+}
 
 /* About */
 .aboutImage {
-	padding-top: 10%;
+	padding-top: 12%;
 	text-align: center;
 }
 
@@ -84,12 +105,53 @@ html, body {
 	width: 70%;
 	padding-top: 50px;
 	margin: 0px auto;
-	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
 }
 
 /* Resume */
-.downloadResume {
+.resume {
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 3%;
+}
+
+.resume img {
+	width: 100%;
+	border: solid black 1.5px;
+}
+
+.resumeLinks {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 13px;
+}
+
+.downloadResume {
+	margin: 5px 0px 5px 0px;
+}
+
+.downloadResume a {
+	color: #265860;
+}
+
+.downloadResume a:hover {
+	text-decoration: none;
+	color: gray;
+}
+
+.otherLinks {
+	margin: 5px 0px 5px 0px;
+	width: 310px;
+}
+
+.otherLinks a {
+	color: #265860;	
+}
+
+.otherLinks a:hover {
+	color: gray;
+}
+
+.otherLinks a:hover, .otherLinks a:active, .otherLinks a:visited {
+	text-decoration: none;
 }

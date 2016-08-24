@@ -1,9 +1,9 @@
 $( document ).ready(function() {
 
-    // Correctly showing / hiding carousel arrows 
-    $('.carousel').carousel({
-      wrap: false
-    }).on('slid.bs.carousel', function () {
+  // Correctly showing / hiding carousel arrows 
+  $('.carousel').carousel({
+    wrap: false
+  }).on('slid.bs.carousel', function () {
     curSlide = $('.active');
 
     if(curSlide.is( ':first-child' )) {
@@ -12,6 +12,7 @@ $( document ).ready(function() {
     } else {
       $('.left').show();   
     }
+
     if (curSlide.is( ':last-child' )) {
       $('.right').hide();
       return;
@@ -19,4 +20,13 @@ $( document ).ready(function() {
       $('.right').show();      
     }
   });
+
+  $('.banner').click(function() {
+    $(this).remove();
+  });
+
+  if(screen.height > screen.width){
+    alert("please rotate your screen for a better effect!");
+  }
+  
 });
