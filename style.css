@@ -46,16 +46,16 @@ html, body {
     position: fixed;
     bottom: 4%;
     width: 100%;
-    margin-left: 40.5%;
+    text-align: center;
+    padding-right: 25px;
 }
 
 .carousel-text-container li {
 	list-style-type: none;
-	margin: 0px 7.5px 0px 7.5px;
-	display: inline;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
 	color: #595959;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0px 7px 0px 7px;
+	display: inline-block;
 }
 
 /* Carousel Arrows */
@@ -102,7 +102,7 @@ html, body {
 }
 
 .aboutBio {
-	width: 70%;
+	width: 60%;
 	padding-top: 50px;
 	margin: 0px auto;
 	font-family: 'Roboto', sans-serif;
@@ -111,7 +111,7 @@ html, body {
 /* Resume */
 .resume {
 	text-align: center;
-	margin-top: 3%;
+	margin-top: 5%;
 }
 
 .resume img {
@@ -124,6 +124,7 @@ html, body {
 	justify-content: space-between;
 	width: 100%;
 	font-size: 13px;
+	font-family: 'Robot', sans-serif;
 }
 
 .downloadResume {
