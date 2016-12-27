@@ -71,6 +71,10 @@ html, body {
     font-size: 20px;
 }
 
+span.icon.icon-prev, span.icon.icon-next {
+	font-size: 40px;
+}
+
 /* Hides the first left arrow */
 .left {
 	display: none;
